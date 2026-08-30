@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en" data-scope="log" data-theme="dark">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="(RE)Loaded project documentation portal"><title>(RE)Loaded · Logs</title><style>:root{color-scheme:dark;--bg:#000;--panel:#000;--panel2:#0a0a0a;--text:#fff;--muted:rgba(255,255,255,.62);--line:rgba(255,255,255,.2);--accent:#0677ff;--accent-soft:rgba(6,119,255,.14);font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace}:root[data-theme=light]{color-scheme:light;--bg:#fff;--panel:#fff;--panel2:#f2f2f2;--text:#000;--muted:rgba(0,0,0,.62);--line:rgba(0,0,0,.2);--accent:#0677ff;--accent-soft:rgba(6,119,255,.12)}*{box-sizing:border-box}::selection{background:var(--accent);color:#fff}body{margin:0;min-width:320px;background:var(--bg);color:var(--text);font-size:15px;line-height:1.65}button,input{font:inherit}.topbar{position:sticky;top:0;z-index:9;display:grid;grid-template-columns:266px minmax(240px,1fr) auto;gap:16px;align-items:center;padding:12px 18px;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(14px)}.brand{display:block}.brand strong,.brand small{display:block}.brand small,.muted{color:var(--muted)}.search input{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--text)}.search input:focus{border-color:var(--accent);outline:2px solid var(--accent-soft)}.actions{display:flex;gap:8px}.icon{height:42px;min-width:42px;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--text);cursor:pointer}.icon:hover,.icon:focus-visible{border-color:var(--accent);color:var(--accent);outline:0}.layout{display:grid;grid-template-columns:300px minmax(0,1fr) 245px;min-height:calc(100vh - 67px)}.sidebar,.toc{position:sticky;top:67px;height:calc(100vh - 67px);overflow:auto;padding:16px;border-right:1px solid var(--line)}.toc{border-right:0;border-left:1px solid var(--line)}.surface-tabs{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin-bottom:16px}.surface-tabs button{padding:8px;border:1px solid var(--line);border-radius:7px;background:transparent;color:var(--text);cursor:pointer}.surface-tabs button:hover,.surface-tabs button:focus-visible,.surface-tabs button.active{border-color:var(--accent);color:var(--accent);outline:0}.surface-tabs button.active{background:var(--accent-soft)}.nav-group{margin:16px 4px 7px;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.doc-button{display:block;width:100%;margin:0 0 7px;padding:9px 10px;border:1px solid transparent;border-radius:8px;background:transparent;color:var(--text);text-align:left;cursor:pointer}.doc-button:hover,.doc-button:focus-visible,.doc-button.active{border-color:var(--line);background:var(--panel2);outline:0}.doc-button.active{border-color:var(--accent)}.doc-button strong,.doc-button small{display:block}.doc-button small{overflow:hidden;color:var(--muted);text-overflow:ellipsis;white-space:nowrap}.content{height:calc(100vh - 67px);overflow:auto;padding:36px clamp(24px,5vw,80px)}.doc-header{margin-bottom:38px;padding-bottom:28px;border-bottom:1px solid var(--line)}.doc-header span{color:var(--accent);font-weight:800;text-transform:uppercase}.doc-header h1{margin:.35em 0;font-size:clamp(2rem,5vw,4rem);line-height:1.05}.doc-header p{max-width:760px;color:var(--muted);font-size:1.05rem}.doc-header code{color:var(--muted)}.markdown{max-width:920px}.markdown h1{display:none}.markdown h2{margin-top:2.2em;padding-bottom:.35em;border-bottom:1px solid var(--line)}.markdown h3{margin-top:1.8em}.markdown a{color:var(--accent)}.markdown code{padding:.12em .35em;border-radius:4px;background:var(--panel2)}pre{overflow:auto;padding:18px;border:1px solid var(--line);border-radius:10px;background:var(--panel2)}pre code{padding:0!important;background:transparent!important}.table-wrap{overflow:auto;margin:1.3em 0;border:1px solid var(--line);border-radius:9px}table{width:100%;border-collapse:collapse}th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:var(--panel2)}tr:last-child td{border-bottom:0}blockquote{margin:1.4em 0;padding:8px 18px;border-left:3px solid var(--accent);background:var(--panel2);color:var(--muted)}li.depth-1{margin-left:1.2em}li.depth-2{margin-left:2.4em}li.depth-3,li.depth-4{margin-left:3.6em}.toc h2{font-size:12px;text-transform:uppercase}.toc a{display:block;margin:5px 0;padding:5px 7px;border-radius:5px;color:var(--muted);text-decoration:none}.toc a:hover,.toc a:focus-visible{background:var(--panel2);color:var(--accent);outline:0}.toc-3{margin-left:12px!important}.toc-4{margin-left:24px!important}.empty{color:var(--muted)}@media(max-width:1050px){.topbar{grid-template-columns:226px minmax(240px,1fr) auto}.layout{grid-template-columns:260px 1fr}.toc{display:none}}@media(max-width:760px){.topbar{grid-template-columns:1fr auto}.search{grid-column:1/-1;grid-row:2}.layout{display:block}.sidebar{position:relative;top:0;width:100%;height:auto;max-height:42vh;border-bottom:1px solid var(--line)}.content{height:auto;min-height:55vh;padding:25px 18px}.brand small{display:none}}.search input{height:42px;padding-top:0;padding-bottom:0}.search-hit{display:block;width:calc(100% - 12px);margin:-4px 0 7px 12px;padding:5px 8px;border:0;border-left:2px solid var(--line);background:transparent;color:var(--muted);text-align:left;cursor:pointer}.search-hit:hover,.search-hit:focus-visible{border-color:var(--accent);color:var(--accent);outline:0}</style></head>
+<body>
+  <header class="topbar"><div class="brand"><strong>(RE)Loaded</strong><small id="surface-title">Logs</small></div><div class="search"><input id="search-input" type="search" autocomplete="off"></div><div class="actions"><button class="icon" id="theme-button" title="Theme">◐</button><button class="icon" id="language-button" title="Language">FR</button></div></header>
+  <main class="layout"><aside class="sidebar"><div class="surface-tabs"><button data-surface="log">Logs</button></div><nav id="doc-nav"></nav></aside><article class="content" id="article"></article><aside class="toc"><h2 id="toc-title">On this page</h2><nav id="toc-links"></nav></aside></main>
+  <script type="application/json" id="portal-data">[{"id":"log-action","surface":"log","language":"ALL","relative":"action.md","path":"log/action.md","title":"Actions","summary":"Rédaction : Romain.","headings":[{"depth":1,"text":"Actions"}],"markdown":"# Actions\n\nRédaction : Romain.\n\n- 24/03/26 `[action]` — Romain : Calculs des points.\n- 24/03/26 `[action]` — Romain : Cadrage du projet.\n- ...\n- 26/03/26 `[action]` — Romain : Orga et split GitHub.\n- ...\n- 28/03/26 `[action]` — Romain : Tooling Git.\n- ...\n","search":"log action md actions redaction romain actions redaction romain 24 03 26 action romain calculs des points 24 03 26 action romain cadrage du projet 26 03 26 action romain orga et split github 28 03 26 action romain tooling git"},{"id":"log-idea","surface":"log","language":"ALL","relative":"idea.md","path":"log/idea.md","title":"Idées","summary":"Rédaction : Romain.","headings":[{"depth":1,"text":"Idées"}],"markdown":"# Idées\n\nRédaction : Romain.\n\n- ??/??/26 `[idea]` — Nathan : Base du projet.\n- ...\n- 25/03/26 `[idea]` — Tous : nom -> TCG (The Coalition Game).\n- 26/03/26 `[idea]` — Romain : nom -> (Re)Loaded.\n- ...\n- 01/04/26 `[idea]` — Nathan : HeatMap par postes / zones.\n  - `[idea]` — Romain : En waterdrop.\n  - `[idea]` — Eloan : Degrade de couleurs.\n- 01/04/26 `[idea]` — Valentin : Pari sur les coalitions des piscineux.\n- 01/04/26 `[idea]` — Romain : events a la con en mode minijeu type FPS / Tour par Tour sur la map de 42 par exemple.\n- 01/04/26 `[idea]` — Eloan : Utilise photo moche mal decoupe des gens du bocal avec des animations foireuses genre decoupage machoire qui bouge tkt, pour tuto utilisation de la page web.\n- 01/04/26 `[idea]` — Romain : Boss poste \"corrompu\", temps limite, beaucoup de points pour capture.\n- 01/04/26 `[idea]` — Eloan : Clavier RGB qui ont la couleur de la coalition qui a capture le poste.\n- ...\n","search":"log idea md idees redaction romain idees redaction romain 26 idea nathan base du projet 25 03 26 idea tous nom tcg the coalition game 26 03 26 idea romain nom re loaded 01 04 26 idea nathan heatmap par postes zones idea romain en waterdrop idea eloan degrade de couleurs 01 04 26 idea valentin pari sur les coalitions des piscineux 01 04 26 idea romain events a la con en mode minijeu type fps tour par tour sur la map de 42 par exemple 01 04 26 idea eloan utilise photo moche mal decoupe des gens du bocal avec des animations foireuses genre decoupage machoire qui bouge tkt pour tuto utilisation de la page web 01 04 26 idea romain boss poste corrompu temps limite beaucoup de points pour capture 01 04 26 idea eloan clavier rgb qui ont la couleur de la coalition qui a capture le poste"}]</script><script>(function clientApp() {
+  const docs = JSON.parse(document.getElementById("portal-data").textContent);
+  const scope = document.documentElement.dataset.scope;
+  const storage = {
+    get(key) { try { return localStorage.getItem(key); } catch { return null; } },
+    set(key, value) { try { localStorage.setItem(key, value); } catch { /* file:// may deny storage */ } },
+  };
+  const state = { language: storage.get("reloaded-doc-language") || "EN", surface: scope === "global" ? "all" : scope, query: [], active: null };
+  const labels = {
+    EN: { search: "Search documentation", contents: "On this page", empty: "No document matches this filter.", all: "All", system: "System", client: "Client", board: "Board", log: "Logs", shared: "Shared", globalTitle: "Global portal", systemTitle: "System docs", clientTitle: "Client docs", boardTitle: "Board", logTitle: "Logs" },
+    FR: { search: "Rechercher dans la documentation", contents: "Dans cette page", empty: "Aucun document ne correspond à ce filtre.", all: "Tout", system: "System", client: "Client", board: "Board", log: "Journaux", shared: "Commun", globalTitle: "Portail global", systemTitle: "Documentation System", clientTitle: "Documentation Client", boardTitle: "Board", logTitle: "Journaux" },
+  };
+  const byId = new Map(docs.map((doc) => [doc.id, doc]));
+  const nav = document.getElementById("doc-nav");
+  const article = document.getElementById("article");
+  const toc = document.getElementById("toc-links");
+  const search = document.getElementById("search-input");
+  const languageButton = document.getElementById("language-button");
+
+  function escape(value) {
+    return value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\"/g, "&quot;");
+  }
+
+  function slug(value) {
+    return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  }
+
+  function normalizeSearch(value) {
+    return value.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").replace(/\s+/g, " ").trim();
+  }
+
+  function matchesAll(value) {
+    const normalized = normalizeSearch(value);
+    return state.query.every((token) => matchesToken(normalized, token));
+  }
+
+  function matchesToken(normalized, token) {
+    if (normalized.includes(token)) return true;
+    return token.length > 3 && (token.endsWith("s") || token.endsWith("x")) && normalized.includes(token.slice(0, -1));
+  }
+
+  function inline(value) {
+    let output = escape(value);
+    output = output.replace(/`([^`]+)`/g, "<code>$1</code>");
+    output = output.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+    output = output.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, "<em>$1</em>");
+    output = output.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+    return output;
+  }
+
+  function renderMarkdown(markdown) {
+    const lines = markdown.replace(/\r/g, "").split("\n");
+    let html = "";
+    let paragraph = [];
+    let list = null;
+    const flushParagraph = () => {
+      if (paragraph.length) html += `<p>${inline(paragraph.join(" "))}</p>`;
+      paragraph = [];
+    };
+    const closeList = () => {
+      if (list) html += `</${list}>`;
+      list = null;
+    };
+    for (let i = 0; i < lines.length; i += 1) {
+      const line = lines[i];
+      if (/^```/.test(line)) {
+        flushParagraph(); closeList();
+        const language = line.slice(3).trim();
+        const code = [];
+        i += 1;
+        while (i < lines.length && !/^```/.test(lines[i])) code.push(lines[i++]);
+        html += `<pre><code data-language="${escape(language)}">${escape(code.join("\n"))}</code></pre>`;
+        continue;
+      }
+      const heading = /^(#{1,6})\s+(.+)$/.exec(line);
+      if (heading) {
+        flushParagraph(); closeList();
+        const level = heading[1].length;
+        const text = heading[2].replace(/\s+#+$/, "");
+        html += `<h${level} id="${slug(text)}">${inline(text)}</h${level}>`;
+        continue;
+      }
+      if (line.includes("|") && i + 1 < lines.length && /^\s*\|?\s*:?-{3,}/.test(lines[i + 1])) {
+        flushParagraph(); closeList();
+        const cells = (row) => row.trim().replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim());
+        const headers = cells(line);
+        i += 2;
+        const rows = [];
+        while (i < lines.length && lines[i].includes("|") && lines[i].trim()) rows.push(cells(lines[i++]));
+        i -= 1;
+        html += `<div class="table-wrap"><table><thead><tr>${headers.map((cell) => `<th>${inline(cell)}</th>`).join("")}</tr></thead><tbody>${rows.map((row) => `<tr>${row.map((cell) => `<td>${inline(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+        continue;
+      }
+      const item = /^(\s*)([-*+] |\d+\. )(.*)$/.exec(line);
+      if (item) {
+        flushParagraph();
+        const wanted = /\d/.test(item[2]) ? "ol" : "ul";
+        if (list !== wanted) { closeList(); list = wanted; html += `<${list}>`; }
+        const depth = Math.min(4, Math.floor(item[1].replace(/\t/g, "    ").length / 2));
+        html += `<li class="depth-${depth}">${inline(item[3])}</li>`;
+        continue;
+      }
+      if (/^>\s?/.test(line)) {
+        flushParagraph(); closeList(); html += `<blockquote>${inline(line.replace(/^>\s?/, ""))}</blockquote>`; continue;
+      }
+      if (/^\s*([-*_])(?:\s*\1){2,}\s*$/.test(line)) {
+        flushParagraph(); closeList(); html += "<hr>"; continue;
+      }
+      if (!line.trim()) { flushParagraph(); closeList(); continue; }
+      paragraph.push(line.trim());
+    }
+    flushParagraph(); closeList();
+    return html;
+  }
+
+  function visibleDocs() {
+    return docs.filter((doc) => {
+      const languageOk = doc.language === "ALL" || doc.language === state.language;
+      const surfaceOk = state.surface === "all" || doc.surface === state.surface;
+      const queryOk = !state.query.length || state.query.every((token) => matchesToken(doc.search, token));
+      return languageOk && surfaceOk && queryOk;
+    });
+  }
+
+  function surfaceLabel(surface) {
+    return labels[state.language][surface] || surface;
+  }
+
+  function renderNav() {
+    const visible = visibleDocs();
+    nav.innerHTML = "";
+    let group = "";
+    for (const doc of visible) {
+      const nextGroup = `${surfaceLabel(doc.surface)} · ${doc.relative.includes("/") ? doc.relative.split("/")[0] : "index"}`;
+      if (nextGroup !== group) {
+        group = nextGroup;
+        const label = document.createElement("div"); label.className = "nav-group"; label.textContent = group; nav.append(label);
+      }
+      const button = document.createElement("button");
+      button.className = `doc-button${doc.id === state.active ? " active" : ""}`;
+      button.innerHTML = `<strong>${escape(doc.title)}</strong><small>${escape(doc.relative)}</small>`;
+      button.addEventListener("click", () => openDoc(doc.id));
+      nav.append(button);
+      if (state.query.length) {
+        for (const heading of doc.headings.filter((item) => matchesAll(item.text)).slice(0, 8)) {
+          const hit = document.createElement("button");
+          hit.className = "search-hit";
+          hit.textContent = `↳ ${heading.text}`;
+          hit.addEventListener("click", () => openDocAtHeading(doc.id, heading.text));
+          nav.append(hit);
+        }
+      }
+    }
+    if (!visible.length) {
+      nav.innerHTML = `<p class="empty">${labels[state.language].empty}</p>`;
+      article.innerHTML = `<div class="empty-state"><h1>${labels[state.language].empty}</h1></div>`;
+      toc.innerHTML = "";
+      return;
+    }
+    if (!visible.some((doc) => doc.id === state.active)) openDoc(visible[0].id, false);
+  }
+
+  function openDoc(id, rerenderNav = true) {
+    const doc = byId.get(id);
+    if (!doc) return;
+    state.active = id;
+    location.hash = id;
+    article.innerHTML = `<header class="doc-header"><span>${surfaceLabel(doc.surface)} · ${doc.language === "ALL" ? labels[state.language].shared : doc.language}</span><h1>${escape(doc.title)}</h1><p>${escape(doc.summary)}</p><code>${escape(doc.path)}</code></header><div class="markdown">${renderMarkdown(doc.markdown)}</div>`;
+    toc.innerHTML = doc.headings.filter((heading) => heading.depth > 1).map((heading) => `<a class="toc-${heading.depth}" href="#${slug(heading.text)}">${escape(heading.text)}</a>`).join("");
+    document.getElementById("toc-title").textContent = labels[state.language].contents;
+    if (rerenderNav) renderNav();
+    article.scrollTop = 0;
+  }
+
+  function openDocAtHeading(id, heading) {
+    openDoc(id);
+    requestAnimationFrame(() => article.querySelector(`#${CSS.escape(slug(heading))}`)?.scrollIntoView({ behavior: "smooth", block: "start" }));
+  }
+
+  function resolveMarkdownLink(href) {
+    const active = byId.get(state.active);
+    if (!active || !href.split("#")[0].endsWith(".md")) return null;
+    const clean = href.split("#")[0];
+    const stack = active.path.split("/"); stack.pop();
+    for (const part of clean.split("/")) {
+      if (part === "..") stack.pop(); else if (part !== ".") stack.push(part);
+    }
+    return docs.find((doc) => doc.path === stack.join("/")) || null;
+  }
+
+  article.addEventListener("click", (event) => {
+    const anchor = event.target.closest("a");
+    if (!anchor) return;
+    const href = anchor.getAttribute("href") || "";
+    const linked = resolveMarkdownLink(href);
+    if (linked) { event.preventDefault(); openDoc(linked.id); return; }
+    if (href.startsWith("#")) {
+      event.preventDefault(); article.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+
+  document.querySelectorAll("[data-surface]").forEach((button) => button.addEventListener("click", () => {
+    state.surface = button.dataset.surface;
+    document.querySelectorAll("[data-surface]").forEach((item) => item.classList.toggle("active", item === button));
+    renderNav();
+  }));
+  search.addEventListener("input", () => {
+    state.query = normalizeSearch(search.value).split(" ").filter(Boolean);
+    renderNav();
+  });
+  languageButton.addEventListener("click", () => {
+    const current = byId.get(state.active);
+    state.language = state.language === "EN" ? "FR" : "EN";
+    storage.set("reloaded-doc-language", state.language);
+    if (current?.language !== "ALL") {
+      const translated = docs.find((doc) => doc.surface === current.surface && doc.language === state.language && doc.relative === current.relative);
+      if (translated) state.active = translated.id;
+    }
+    updateLanguageUi();
+    renderNav();
+    if (state.active) openDoc(state.active, false);
+  });
+  document.getElementById("theme-button").addEventListener("click", () => {
+    const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+    document.documentElement.dataset.theme = next; storage.set("reloaded-doc-theme", next);
+  });
+  document.documentElement.dataset.theme = storage.get("reloaded-doc-theme") || "dark";
+  function updateLanguageUi() {
+    const copy = labels[state.language];
+    languageButton.textContent = state.language === "EN" ? "FR" : "EN";
+    languageButton.title = state.language === "EN" ? "Afficher en français" : "Show in English";
+    search.placeholder = copy.search;
+    document.getElementById("surface-title").textContent = copy[`${scope}Title`];
+    document.querySelectorAll("[data-surface]").forEach((button) => {
+      button.textContent = copy[button.dataset.surface];
+    });
+  }
+  updateLanguageUi();
+  const hashDoc = byId.get(location.hash.slice(1));
+  if (hashDoc) state.active = hashDoc.id;
+  document.querySelector(`[data-surface="${state.surface}"]`)?.classList.add("active");
+  renderNav();
+})();</script>
+</body></html>

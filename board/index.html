@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en" data-scope="board" data-theme="dark">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="(RE)Loaded project documentation portal"><title>(RE)Loaded · Board</title><style>:root{color-scheme:dark;--bg:#000;--panel:#000;--panel2:#0a0a0a;--text:#fff;--muted:rgba(255,255,255,.62);--line:rgba(255,255,255,.2);--accent:#0677ff;--accent-soft:rgba(6,119,255,.14);font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace}:root[data-theme=light]{color-scheme:light;--bg:#fff;--panel:#fff;--panel2:#f2f2f2;--text:#000;--muted:rgba(0,0,0,.62);--line:rgba(0,0,0,.2);--accent:#0677ff;--accent-soft:rgba(6,119,255,.12)}*{box-sizing:border-box}::selection{background:var(--accent);color:#fff}body{margin:0;min-width:320px;background:var(--bg);color:var(--text);font-size:15px;line-height:1.65}button,input{font:inherit}.topbar{position:sticky;top:0;z-index:9;display:grid;grid-template-columns:266px minmax(240px,1fr) auto;gap:16px;align-items:center;padding:12px 18px;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(14px)}.brand{display:block}.brand strong,.brand small{display:block}.brand small,.muted{color:var(--muted)}.search input{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--text)}.search input:focus{border-color:var(--accent);outline:2px solid var(--accent-soft)}.actions{display:flex;gap:8px}.icon{height:42px;min-width:42px;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--text);cursor:pointer}.icon:hover,.icon:focus-visible{border-color:var(--accent);color:var(--accent);outline:0}.layout{display:grid;grid-template-columns:300px minmax(0,1fr) 245px;min-height:calc(100vh - 67px)}.sidebar,.toc{position:sticky;top:67px;height:calc(100vh - 67px);overflow:auto;padding:16px;border-right:1px solid var(--line)}.toc{border-right:0;border-left:1px solid var(--line)}.surface-tabs{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin-bottom:16px}.surface-tabs button{padding:8px;border:1px solid var(--line);border-radius:7px;background:transparent;color:var(--text);cursor:pointer}.surface-tabs button:hover,.surface-tabs button:focus-visible,.surface-tabs button.active{border-color:var(--accent);color:var(--accent);outline:0}.surface-tabs button.active{background:var(--accent-soft)}.nav-group{margin:16px 4px 7px;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.doc-button{display:block;width:100%;margin:0 0 7px;padding:9px 10px;border:1px solid transparent;border-radius:8px;background:transparent;color:var(--text);text-align:left;cursor:pointer}.doc-button:hover,.doc-button:focus-visible,.doc-button.active{border-color:var(--line);background:var(--panel2);outline:0}.doc-button.active{border-color:var(--accent)}.doc-button strong,.doc-button small{display:block}.doc-button small{overflow:hidden;color:var(--muted);text-overflow:ellipsis;white-space:nowrap}.content{height:calc(100vh - 67px);overflow:auto;padding:36px clamp(24px,5vw,80px)}.doc-header{margin-bottom:38px;padding-bottom:28px;border-bottom:1px solid var(--line)}.doc-header span{color:var(--accent);font-weight:800;text-transform:uppercase}.doc-header h1{margin:.35em 0;font-size:clamp(2rem,5vw,4rem);line-height:1.05}.doc-header p{max-width:760px;color:var(--muted);font-size:1.05rem}.doc-header code{color:var(--muted)}.markdown{max-width:920px}.markdown h1{display:none}.markdown h2{margin-top:2.2em;padding-bottom:.35em;border-bottom:1px solid var(--line)}.markdown h3{margin-top:1.8em}.markdown a{color:var(--accent)}.markdown code{padding:.12em .35em;border-radius:4px;background:var(--panel2)}pre{overflow:auto;padding:18px;border:1px solid var(--line);border-radius:10px;background:var(--panel2)}pre code{padding:0!important;background:transparent!important}.table-wrap{overflow:auto;margin:1.3em 0;border:1px solid var(--line);border-radius:9px}table{width:100%;border-collapse:collapse}th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:var(--panel2)}tr:last-child td{border-bottom:0}blockquote{margin:1.4em 0;padding:8px 18px;border-left:3px solid var(--accent);background:var(--panel2);color:var(--muted)}li.depth-1{margin-left:1.2em}li.depth-2{margin-left:2.4em}li.depth-3,li.depth-4{margin-left:3.6em}.toc h2{font-size:12px;text-transform:uppercase}.toc a{display:block;margin:5px 0;padding:5px 7px;border-radius:5px;color:var(--muted);text-decoration:none}.toc a:hover,.toc a:focus-visible{background:var(--panel2);color:var(--accent);outline:0}.toc-3{margin-left:12px!important}.toc-4{margin-left:24px!important}.empty{color:var(--muted)}@media(max-width:1050px){.topbar{grid-template-columns:226px minmax(240px,1fr) auto}.layout{grid-template-columns:260px 1fr}.toc{display:none}}@media(max-width:760px){.topbar{grid-template-columns:1fr auto}.search{grid-column:1/-1;grid-row:2}.layout{display:block}.sidebar{position:relative;top:0;width:100%;height:auto;max-height:42vh;border-bottom:1px solid var(--line)}.content{height:auto;min-height:55vh;padding:25px 18px}.brand small{display:none}}.search input{height:42px;padding-top:0;padding-bottom:0}.search-hit{display:block;width:calc(100% - 12px);margin:-4px 0 7px 12px;padding:5px 8px;border:0;border-left:2px solid var(--line);background:transparent;color:var(--muted);text-align:left;cursor:pointer}.search-hit:hover,.search-hit:focus-visible{border-color:var(--accent);color:var(--accent);outline:0}</style></head>
+<body>
+  <header class="topbar"><div class="brand"><strong>(RE)Loaded</strong><small id="surface-title">Board</small></div><div class="search"><input id="search-input" type="search" autocomplete="off"></div><div class="actions"><button class="icon" id="theme-button" title="Theme">◐</button><button class="icon" id="language-button" title="Language">FR</button></div></header>
+  <main class="layout"><aside class="sidebar"><div class="surface-tabs"><button data-surface="board">Board</button></div><nav id="doc-nav"></nav></aside><article class="content" id="article"></article><aside class="toc"><h2 id="toc-title">On this page</h2><nav id="toc-links"></nav></aside></main>
+  <script type="application/json" id="portal-data">[{"id":"board-01-04-2026","surface":"board","language":"ALL","relative":"01_04_2026.md","path":"board/01_04_2026.md","title":"Board — 01/04/2026","summary":"Participants : Valentin, Nathan, Eloan, Romain (rédaction).","headings":[{"depth":1,"text":"Board — 01/04/2026"},{"depth":2,"text":"Ideas"},{"depth":2,"text":"Discuss"},{"depth":3,"text":"Modele de points"},{"depth":3,"text":"Modele de capture"},{"depth":2,"text":"Front"},{"depth":2,"text":"Back"},{"depth":3,"text":"Client — Eloan : Python / NodeJS"},{"depth":3,"text":"Client — Nathan & Valentin : ?"},{"depth":3,"text":"System — Romain"}],"markdown":"# Board — 01/04/2026\n\nParticipants : Valentin, Nathan, Eloan, Romain (rédaction).\n\n## Ideas\n\n- 01/04/26 `[idea]` — Nathan : HeatMap par postes / zones.\n  - `[idea]` — Romain : En waterdrop.\n  - `[idea]` — Eloan : Degrade de couleurs.\n- 01/04/26 `[idea]` — Valentin : Pari sur les coalitions des piscineux.\n- 01/04/26 `[idea]` — Romain : events a la con en mode minijeu type FPS / Tour par Tour sur la map de 42 par exemple.\n- 01/04/26 `[idea]` — Eloan : Utilise photo moche mal decoupe des gens du bocal avec des animations foireuses genre decoupage machoire qui bouge tkt, pour tuto utilisation de la page web.\n- 01/04/26 `[idea]` — Romain : Boss poste \"corrompu\", temps limite, beaucoup de points pour capture.\n- 01/04/26 `[idea]` — Eloan : Clavier RGB qui ont la couleur de la coalition qui a capture le poste.\n\n## Discuss\n\n### Modele de points\n\n- Re-map les projets pour normalizer les points de coalitions.\n- Equilibrage saisonier (opt - GM).\n- Wallet Points - Wallet vers PwU.\n- Points de base des projets, evenements etc ...\n- ...\n\n### Modele de capture\n\n- Investir des points pouir capturer un pc.\n- PwU augmentent les points generes si capture.\n- Palier de capture qui accorde un pourcentage de rendement final du poste.\n- Poste toujours attaquables.\n- Pari publique ou privee pour les PwU.\n- Systeme hybride de de capture, avec postes a temps limite, pas capturable de facon permanente, renforce les gains et permets de faire bouger les lignes de front.\n- ...\n\n## Front\n\n## Back\n\n### Client — Eloan : Python / NodeJS\n\n- API -> API 42 Auth + API System & API Client.\n- DB Stats.\n- combo client / server.\n- Interactions system, placement, action, ...\n- servir les pages web et avoir les status.\n- Securite ...\n- Multi-endpoints (opt).\n- Burst utilisateur cliques pleins de fois comme des golmons.\n- ...\n\n### Client — Nathan & Valentin : ?\n\n- Login + 2FA + 42 Auth(OBLIGATOIRE pour se log).\n- Userpage.\n- Parametres et custom.\n- Leaderboard.\n- Map.\n- Dark / Light / Cache(opt) mode.\n- Interactions avec les postes, les modeles de vue, etc ...\n- couleurs et precision de map (opt).\n- ...\n\n### System — Romain\n\n- API -> API 42 & API System.\n- ...\n","search":"board 01 04 2026 md board 01 04 2026 participants valentin nathan eloan romain redaction board 01 04 2026 participants valentin nathan eloan romain redaction ideas 01 04 26 idea nathan heatmap par postes zones idea romain en waterdrop idea eloan degrade de couleurs 01 04 26 idea valentin pari sur les coalitions des piscineux 01 04 26 idea romain events a la con en mode minijeu type fps tour par tour sur la map de 42 par exemple 01 04 26 idea eloan utilise photo moche mal decoupe des gens du bocal avec des animations foireuses genre decoupage machoire qui bouge tkt pour tuto utilisation de la page web 01 04 26 idea romain boss poste corrompu temps limite beaucoup de points pour capture 01 04 26 idea eloan clavier rgb qui ont la couleur de la coalition qui a capture le poste discuss modele de points re map les projets pour normalizer les points de coalitions equilibrage saisonier opt gm wallet points wallet vers pwu points de base des projets evenements etc modele de capture investir des points pouir capturer un pc pwu augmentent les points generes si capture palier de capture qui accorde un pourcentage de rendement final du poste poste toujours attaquables pari publique ou privee pour les pwu systeme hybride de de capture avec postes a temps limite pas capturable de facon permanente renforce les gains et permets de faire bouger les lignes de front front back client eloan python nodejs api api 42 auth api system api client db stats combo client server interactions system placement action servir les pages web et avoir les status securite multi endpoints opt burst utilisateur cliques pleins de fois comme des golmons client nathan valentin login 2fa 42 auth obligatoire pour se log userpage parametres et custom leaderboard map dark light cache opt mode interactions avec les postes les modeles de vue etc couleurs et precision de map opt system romain api api 42 api system"},{"id":"board-08-04-2026","surface":"board","language":"ALL","relative":"08_04_2026.md","path":"board/08_04_2026.md","title":"Board — 08/04/2026","summary":"Participants : Valentin, Nathan, Eloan, Romain (rédaction).","headings":[{"depth":1,"text":"Board — 08/04/2026"},{"depth":2,"text":"Ideas"},{"depth":2,"text":"Discuss"},{"depth":3,"text":"Front"},{"depth":2,"text":"Done"},{"depth":3,"text":"Nathan — collaboration"},{"depth":3,"text":"Valentin — collaboration"},{"depth":3,"text":"Eloan"},{"depth":3,"text":"Romain"},{"depth":2,"text":"Deadline"},{"depth":3,"text":"Nathan & Valentin — Design (Base)"},{"depth":3,"text":"Eloan — Base"},{"depth":3,"text":"Romain — Base"},{"depth":2,"text":"Client — Back"},{"depth":3,"text":"Eloan : Python (FastAPI)"},{"depth":2,"text":"System — Back"},{"depth":3,"text":"Romain"}],"markdown":"# Board — 08/04/2026\n\nParticipants : Valentin, Nathan, Eloan, Romain (rédaction).\n\n## Ideas\n\n- 08/04/26 `[idea]` — Valentin : Titre dans l'intra en cosmetique achetable avec wallets.\n\n## Discuss\n\n### Front\n\n- Pas de version pour telephone, les resolutions commencent a partir d'une tablette, identifier a partir de 8\" ou resolution HD, device en tant que tablette ou pc.\n\n## Done\n\n### Nathan — collaboration\n\n- Haut gauche -> logo.\n- Map directement accessible des la connexion dans le viewport.\n- Haut -> \"The Scores\" bandeau des scores en affichage minimal.\n- Cote gauche :\n  - Profile\n  - Leaderboard\n  - \"Map\"\n  - \"Dash\"\n  - Settings\n- Haut gauche viewport -> Filtres :\n  - Coalition\n  - Zones\n\n### Valentin — collaboration\n\n- Teste de front avec : React + Vite + TailwindCSS.\n- Design de la page de login.\n\n### Eloan\n\n- Teste de back avec FastAPI.\n- Test d'integration d'infrastructure avec Docker.\n- Server de base joignable sur localhost.\n\n### Romain\n\n- Base d'un module data pour wrapper SQL.\n- Base d'un module de gestion d'erreurs.\n- Base des modules server et client avec une pool de threads.\n\n## Deadline\n\n### Nathan & Valentin — Design (Base)\n\n- Login : 1 sem.\n- Home : 2 sem.\n- Profile : 1 sem.\n- Leaderboard : 1 sem.\n- Map : 1 j.\n- Settings : 4 j.\n\n### Eloan — Base\n\n- Server & Client : Fini.\n- API in : 2 j.\n- DB : 4j.\n\n### Romain — Base\n\n- Server & Client : Fini.\n- API in : 3 j.\n- DB : Fini.\n- Core : 1 sem.\n\n## Client — Back\n\n### Eloan : Python (FastAPI)\n\n- systeme d'erreurs.\n- systeme de log. `\u003c-----------\\`\n- systeme d'etat du serveur. `--/`\n- systeme de config.\n\n## System — Back\n\n### Romain\n\n- DB.\n- systeme d'erreurs.\n- systeme de log.\n- systeme d'etat du serveur.\n- systeme de config.\n- systeme de formattage.\n- systeme de config.\n- systeme de status.\n- systeme de securite.\n- mappage des ressources.\n","search":"board 08 04 2026 md board 08 04 2026 participants valentin nathan eloan romain redaction board 08 04 2026 participants valentin nathan eloan romain redaction ideas 08 04 26 idea valentin titre dans l intra en cosmetique achetable avec wallets discuss front pas de version pour telephone les resolutions commencent a partir d une tablette identifier a partir de 8 ou resolution hd device en tant que tablette ou pc done nathan collaboration haut gauche logo map directement accessible des la connexion dans le viewport haut the scores bandeau des scores en affichage minimal cote gauche profile leaderboard map dash settings haut gauche viewport filtres coalition zones valentin collaboration teste de front avec react vite tailwindcss design de la page de login eloan teste de back avec fastapi test d integration d infrastructure avec docker server de base joignable sur localhost romain base d un module data pour wrapper sql base d un module de gestion d erreurs base des modules server et client avec une pool de threads deadline nathan valentin design base login 1 sem home 2 sem profile 1 sem leaderboard 1 sem map 1 j settings 4 j eloan base server client fini api in 2 j db 4j romain base server client fini api in 3 j db fini core 1 sem client back eloan python fastapi systeme d erreurs systeme de log systeme d etat du serveur systeme de config system back romain db systeme d erreurs systeme de log systeme d etat du serveur systeme de config systeme de formattage systeme de config systeme de status systeme de securite mappage des ressources"},{"id":"board-15-04-2026","surface":"board","language":"ALL","relative":"15_04_2026.md","path":"board/15_04_2026.md","title":"Board — 15/04/2026","summary":"Participants : Valentin, Nathan, Eloan, Romain (rédaction).","headings":[{"depth":1,"text":"Board — 15/04/2026"},{"depth":2,"text":"Discuss"},{"depth":3,"text":"Front"},{"depth":2,"text":"Done"},{"depth":3,"text":"Front — Nathan (collaboration)"},{"depth":3,"text":"Front — Valentin (collaboration)"},{"depth":3,"text":"Eloan"},{"depth":3,"text":"Romain"},{"depth":2,"text":"Deadline"},{"depth":3,"text":"Nathan & Valentin — Design (Base)"},{"depth":3,"text":"Eloan — Base"},{"depth":3,"text":"Romain — Base"},{"depth":2,"text":"Client — Front"},{"depth":3,"text":"Nathan & Valentin : ?"},{"depth":2,"text":"Client — Back"},{"depth":3,"text":"Eloan : Python"}],"markdown":"# Board — 15/04/2026\n\nParticipants : Valentin, Nathan, Eloan, Romain (rédaction).\n\n## Discuss\n\n### Front\n\n- Modele 3D en .obj avec les .mtl et textures (optionnelles).\n- SVJ, PNG pour les assets.\n\n## Done\n\n### Front — Nathan (collaboration)\n\n- base de layout pour la main page sur figma, design 2 avec hotbar sur le cote gauche ou droite au choix, filtre en haut a gauche.\n- introduction de base de la carte, et tests de design pour la capture.\n\n### Front — Valentin (collaboration)\n\n- commencement d'une base temporaire d'une fausse map des clusters avec SolidWorks, et passage futur a Blender.\n\n### Eloan\n\n- database de base avec PostGree SQL.\n- auth utilisabble via 42 auth.\n\n### Romain\n\n- base d'un systeme d'infra base sur le repo concerne (Infra)\n- modification de tool pour integrer une base des modules services configurables pour chaque repo.\n\n## Deadline\n\n### Nathan & Valentin — Design (Base)\n\n- Login : 2j.\n- Home : Fini.\n- Profile : 2j.\n- Leaderboard : 3j.\n- Map : 1 sem.\n- Settings : 3 sem.\n\n### Eloan — Base\n\n- Server & Client : Fini.\n- API in (auth) : Fini.\n- API out : 2 mois.\n- DB : Fini.\n\n### Romain — Base\n\n- Server & Client : Fini.\n- API in : 3 j.\n- DB : Fini.\n- Core : 5 j.\n\n## Client — Front\n\n### Nathan & Valentin : ?\n\n- Faire schema d'integration d'access (API in).\n- Faire schema d'action et d'evenements UI/UX.\n\n## Client — Back\n\n### Eloan : Python\n\n- Faire schema d'integration d'access (API in/out).\n- Faire schema systeme des modules etc ...\n","search":"board 15 04 2026 md board 15 04 2026 participants valentin nathan eloan romain redaction board 15 04 2026 participants valentin nathan eloan romain redaction discuss front modele 3d en obj avec les mtl et textures optionnelles svj png pour les assets done front nathan collaboration base de layout pour la main page sur figma design 2 avec hotbar sur le cote gauche ou droite au choix filtre en haut a gauche introduction de base de la carte et tests de design pour la capture front valentin collaboration commencement d une base temporaire d une fausse map des clusters avec solidworks et passage futur a blender eloan database de base avec postgree sql auth utilisabble via 42 auth romain base d un systeme d infra base sur le repo concerne infra modification de tool pour integrer une base des modules services configurables pour chaque repo deadline nathan valentin design base login 2j home fini profile 2j leaderboard 3j map 1 sem settings 3 sem eloan base server client fini api in auth fini api out 2 mois db fini romain base server client fini api in 3 j db fini core 5 j client front nathan valentin faire schema d integration d access api in faire schema d action et d evenements ui ux client back eloan python faire schema d integration d access api in out faire schema systeme des modules etc"},{"id":"board-29-04-2026","surface":"board","language":"ALL","relative":"29_04_2026.md","path":"board/29_04_2026.md","title":"Board — 29/04/2026","summary":"Participants : Valentin, Eloan, Romain (rédaction).","headings":[{"depth":1,"text":"Board — 29/04/2026"},{"depth":2,"text":"Ideas"},{"depth":2,"text":"Discuss"},{"depth":3,"text":"Game"},{"depth":3,"text":"Front"},{"depth":2,"text":"Deadline"},{"depth":3,"text":"ULTIMATE DEADLINE : 20 mai 2026"},{"depth":3,"text":"Nathan & Valentin — Design (Base)"},{"depth":3,"text":"Eloan — Base"},{"depth":3,"text":"Romain — Base"},{"depth":2,"text":"Client — Front"},{"depth":3,"text":"Nathan & Valentin : Design"},{"depth":2,"text":"Client — Back"},{"depth":3,"text":"Eloan — Base"}],"markdown":"# Board — 29/04/2026\n\nParticipants : Valentin, Eloan, Romain (rédaction).\n\n## Ideas\n\n- ??/04/26 `[idea]` — Nathan : Streak de connection au jeu.\n- 29/04/26 `[idea]` — Romain : Capturer un poste avec des points ou en faisant un ou plusieurs mini-jeux.\n- 29/04/26 `[idea]` — Valentin : Idee d'item piege de posts et neutralisation d'ennemis.\n\n## Discuss\n\n### Game\n\n- Les noms et formation des squads et guildes sont administres par les jouers et le Master.\n- Les actions de combat sont : attack, defend, et return.\n- Les actions d'eco sont : acheter et vendre au serveur, exchange avec le serveur ou des joueurs, borrow a sa squad sa guilde ou sa coalition.\n- Les differents groupes : Squad, Guilde et Coalition n'ont pas la meme taille de pool de points.\n- Les tailles des groupes sont :\n  - Squad : 5 pers.\n  - Guild : 42 pers.\n  - Coalition : INF pers.\n- Les unites de la carte sont :\n  - Desktop (standard, corrupted, infected).\n  - Row\n  - Area\n  - Cluster\n  - Campus\n- Les events :\n  - battle : attaque standard d'un desktop.\n  - boss : attaque d'un corrupted desktop.\n  - cyberattack : attaque de plusieurs infected desktop.\n- Les attributs :\n  - ...\n- Les items :\n  - Bluescreen : plante un piege sur un poste a capturer, la coaltion enemie qui le capture vera le poste planter (in-game) et perdra les points investies pour la capture, cet item ne peut pas etre utilise sur les boss et les posts en cours d'attaque.\n  - Chrome : aspire toute la ram de la session et freeze le jeu de l'ennemi pendant quelques minutes avec un bouton cache pour unfreeze avant la fin du compte a rebours.\n  - Fisherman : fait pop pleins de pop up sur l'interface de l'ennemi toutes les x secondes pendant quelques minutes, ne peut pas etre contre, l'interface est utilisable tant que les pop ups sont fermees.\n  - TheCrypt : chiffre la quantite de points que l'utilisateur possede, il a 3 essaies pour deviner le montant exact ou inferieur pour recuperer ses points sinon il gagne le montant le plus eleve indique en dessous de son montant initial.\n  - ...\n- Les effects :\n  - Overload\n  - ...\n\n### Front\n\n- On arrive sur le modele (map) de bias de loin, si on zoom sur la page, tres rapidement l'annimation met le modele sur une vue de face en haut.\n\n## Deadline\n\n### ULTIMATE DEADLINE : 20 mai 2026\n\n- Design.\n- Front-End Base (OPT).\n- Back-End Base.\n\n### Nathan & Valentin — Design (Base)\n\n- Login : 3j.\n- Home : 3j.\n- Logo : 1 sem.\n- Profile : 5j.\n- Leaderboard : 5j.\n- Settings : 5j.\n- Shop (OPT) : 5j.\n- Map : 2 sem.\n\n### Eloan — Base\n\n- Server & Client : Fini.\n- API in (auth) : Fini.\n- API out : 2 sem.\n- DB : Fini.\n\n### Romain — Base\n\n- Server & Client : Fini.\n- API in : 1 sem.\n- DB : Fini.\n- Core : 1 sem.\n\n## Client — Front\n\n### Nathan & Valentin : Design\n\n- utiliser un icon '...' ou avec des barres pour le depliant \"island\".\n- style avec bulles, UI arrondie.\n- Logo Fromat (PNG, SVG): icon, text, icon + text.\n- Logo = Ilo Haut Gauche\n- State bar = Ilo Centre Haut\n- Menu bar = Ilo Haut Droite\n- Hot bar = Ilo Centre Gauche\n- Si on clique sur la State Bar sa nous renvoie sur le Leaderboard, si on clique sur l'icone d'une coalition elle passe en grisee et est cache sur la map, et si on clique sur le score d'une coalition sa nous affiche les stats de la coalition.\n- La Menu Bar doit contenir dans l'ordre : user, parameters, shop et event.\n\n## Client — Back\n\n### Eloan — Base\n\n- 2FA avec google auth par exemple en option si active dans les settings de l'user.\n","search":"board 29 04 2026 md board 29 04 2026 participants valentin eloan romain redaction board 29 04 2026 participants valentin eloan romain redaction ideas 04 26 idea nathan streak de connection au jeu 29 04 26 idea romain capturer un poste avec des points ou en faisant un ou plusieurs mini jeux 29 04 26 idea valentin idee d item piege de posts et neutralisation d ennemis discuss game les noms et formation des squads et guildes sont administres par les jouers et le master les actions de combat sont attack defend et return les actions d eco sont acheter et vendre au serveur exchange avec le serveur ou des joueurs borrow a sa squad sa guilde ou sa coalition les differents groupes squad guilde et coalition n ont pas la meme taille de pool de points les tailles des groupes sont squad 5 pers guild 42 pers coalition inf pers les unites de la carte sont desktop standard corrupted infected row area cluster campus les events battle attaque standard d un desktop boss attaque d un corrupted desktop cyberattack attaque de plusieurs infected desktop les attributs les items bluescreen plante un piege sur un poste a capturer la coaltion enemie qui le capture vera le poste planter in game et perdra les points investies pour la capture cet item ne peut pas etre utilise sur les boss et les posts en cours d attaque chrome aspire toute la ram de la session et freeze le jeu de l ennemi pendant quelques minutes avec un bouton cache pour unfreeze avant la fin du compte a rebours fisherman fait pop pleins de pop up sur l interface de l ennemi toutes les x secondes pendant quelques minutes ne peut pas etre contre l interface est utilisable tant que les pop ups sont fermees thecrypt chiffre la quantite de points que l utilisateur possede il a 3 essaies pour deviner le montant exact ou inferieur pour recuperer ses points sinon il gagne le montant le plus eleve indique en dessous de son montant initial les effects overload front on arrive sur le modele map de bias de loin si on zoom sur la page tres rapidement l annimation met le modele sur une vue de face en haut deadline ultimate deadline 20 mai 2026 design front end base opt back end base nathan valentin design base login 3j home 3j logo 1 sem profile 5j leaderboard 5j settings 5j shop opt 5j map 2 sem eloan base server client fini api in auth fini api out 2 sem db fini romain base server client fini api in 1 sem db fini core 1 sem client front nathan valentin design utiliser un icon ou avec des barres pour le depliant island style avec bulles ui arrondie logo fromat png svg icon text icon text logo ilo haut gauche state bar ilo centre haut menu bar ilo haut droite hot bar ilo centre gauche si on clique sur la state bar sa nous renvoie sur le leaderboard si on clique sur l icone d une coalition elle passe en grisee et est cache sur la map et si on clique sur le score d une coalition sa nous affiche les stats de la coalition la menu bar doit contenir dans l ordre user parameters shop et event client back eloan base 2fa avec google auth par exemple en option si active dans les settings de l user"}]</script><script>(function clientApp() {
+  const docs = JSON.parse(document.getElementById("portal-data").textContent);
+  const scope = document.documentElement.dataset.scope;
+  const storage = {
+    get(key) { try { return localStorage.getItem(key); } catch { return null; } },
+    set(key, value) { try { localStorage.setItem(key, value); } catch { /* file:// may deny storage */ } },
+  };
+  const state = { language: storage.get("reloaded-doc-language") || "EN", surface: scope === "global" ? "all" : scope, query: [], active: null };
+  const labels = {
+    EN: { search: "Search documentation", contents: "On this page", empty: "No document matches this filter.", all: "All", system: "System", client: "Client", board: "Board", log: "Logs", shared: "Shared", globalTitle: "Global portal", systemTitle: "System docs", clientTitle: "Client docs", boardTitle: "Board", logTitle: "Logs" },
+    FR: { search: "Rechercher dans la documentation", contents: "Dans cette page", empty: "Aucun document ne correspond à ce filtre.", all: "Tout", system: "System", client: "Client", board: "Board", log: "Journaux", shared: "Commun", globalTitle: "Portail global", systemTitle: "Documentation System", clientTitle: "Documentation Client", boardTitle: "Board", logTitle: "Journaux" },
+  };
+  const byId = new Map(docs.map((doc) => [doc.id, doc]));
+  const nav = document.getElementById("doc-nav");
+  const article = document.getElementById("article");
+  const toc = document.getElementById("toc-links");
+  const search = document.getElementById("search-input");
+  const languageButton = document.getElementById("language-button");
+
+  function escape(value) {
+    return value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\"/g, "&quot;");
+  }
+
+  function slug(value) {
+    return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  }
+
+  function normalizeSearch(value) {
+    return value.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").replace(/\s+/g, " ").trim();
+  }
+
+  function matchesAll(value) {
+    const normalized = normalizeSearch(value);
+    return state.query.every((token) => matchesToken(normalized, token));
+  }
+
+  function matchesToken(normalized, token) {
+    if (normalized.includes(token)) return true;
+    return token.length > 3 && (token.endsWith("s") || token.endsWith("x")) && normalized.includes(token.slice(0, -1));
+  }
+
+  function inline(value) {
+    let output = escape(value);
+    output = output.replace(/`([^`]+)`/g, "<code>$1</code>");
+    output = output.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+    output = output.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, "<em>$1</em>");
+    output = output.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+    return output;
+  }
+
+  function renderMarkdown(markdown) {
+    const lines = markdown.replace(/\r/g, "").split("\n");
+    let html = "";
+    let paragraph = [];
+    let list = null;
+    const flushParagraph = () => {
+      if (paragraph.length) html += `<p>${inline(paragraph.join(" "))}</p>`;
+      paragraph = [];
+    };
+    const closeList = () => {
+      if (list) html += `</${list}>`;
+      list = null;
+    };
+    for (let i = 0; i < lines.length; i += 1) {
+      const line = lines[i];
+      if (/^```/.test(line)) {
+        flushParagraph(); closeList();
+        const language = line.slice(3).trim();
+        const code = [];
+        i += 1;
+        while (i < lines.length && !/^```/.test(lines[i])) code.push(lines[i++]);
+        html += `<pre><code data-language="${escape(language)}">${escape(code.join("\n"))}</code></pre>`;
+        continue;
+      }
+      const heading = /^(#{1,6})\s+(.+)$/.exec(line);
+      if (heading) {
+        flushParagraph(); closeList();
+        const level = heading[1].length;
+        const text = heading[2].replace(/\s+#+$/, "");
+        html += `<h${level} id="${slug(text)}">${inline(text)}</h${level}>`;
+        continue;
+      }
+      if (line.includes("|") && i + 1 < lines.length && /^\s*\|?\s*:?-{3,}/.test(lines[i + 1])) {
+        flushParagraph(); closeList();
+        const cells = (row) => row.trim().replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim());
+        const headers = cells(line);
+        i += 2;
+        const rows = [];
+        while (i < lines.length && lines[i].includes("|") && lines[i].trim()) rows.push(cells(lines[i++]));
+        i -= 1;
+        html += `<div class="table-wrap"><table><thead><tr>${headers.map((cell) => `<th>${inline(cell)}</th>`).join("")}</tr></thead><tbody>${rows.map((row) => `<tr>${row.map((cell) => `<td>${inline(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+        continue;
+      }
+      const item = /^(\s*)([-*+] |\d+\. )(.*)$/.exec(line);
+      if (item) {
+        flushParagraph();
+        const wanted = /\d/.test(item[2]) ? "ol" : "ul";
+        if (list !== wanted) { closeList(); list = wanted; html += `<${list}>`; }
+        const depth = Math.min(4, Math.floor(item[1].replace(/\t/g, "    ").length / 2));
+        html += `<li class="depth-${depth}">${inline(item[3])}</li>`;
+        continue;
+      }
+      if (/^>\s?/.test(line)) {
+        flushParagraph(); closeList(); html += `<blockquote>${inline(line.replace(/^>\s?/, ""))}</blockquote>`; continue;
+      }
+      if (/^\s*([-*_])(?:\s*\1){2,}\s*$/.test(line)) {
+        flushParagraph(); closeList(); html += "<hr>"; continue;
+      }
+      if (!line.trim()) { flushParagraph(); closeList(); continue; }
+      paragraph.push(line.trim());
+    }
+    flushParagraph(); closeList();
+    return html;
+  }
+
+  function visibleDocs() {
+    return docs.filter((doc) => {
+      const languageOk = doc.language === "ALL" || doc.language === state.language;
+      const surfaceOk = state.surface === "all" || doc.surface === state.surface;
+      const queryOk = !state.query.length || state.query.every((token) => matchesToken(doc.search, token));
+      return languageOk && surfaceOk && queryOk;
+    });
+  }
+
+  function surfaceLabel(surface) {
+    return labels[state.language][surface] || surface;
+  }
+
+  function renderNav() {
+    const visible = visibleDocs();
+    nav.innerHTML = "";
+    let group = "";
+    for (const doc of visible) {
+      const nextGroup = `${surfaceLabel(doc.surface)} · ${doc.relative.includes("/") ? doc.relative.split("/")[0] : "index"}`;
+      if (nextGroup !== group) {
+        group = nextGroup;
+        const label = document.createElement("div"); label.className = "nav-group"; label.textContent = group; nav.append(label);
+      }
+      const button = document.createElement("button");
+      button.className = `doc-button${doc.id === state.active ? " active" : ""}`;
+      button.innerHTML = `<strong>${escape(doc.title)}</strong><small>${escape(doc.relative)}</small>`;
+      button.addEventListener("click", () => openDoc(doc.id));
+      nav.append(button);
+      if (state.query.length) {
+        for (const heading of doc.headings.filter((item) => matchesAll(item.text)).slice(0, 8)) {
+          const hit = document.createElement("button");
+          hit.className = "search-hit";
+          hit.textContent = `↳ ${heading.text}`;
+          hit.addEventListener("click", () => openDocAtHeading(doc.id, heading.text));
+          nav.append(hit);
+        }
+      }
+    }
+    if (!visible.length) {
+      nav.innerHTML = `<p class="empty">${labels[state.language].empty}</p>`;
+      article.innerHTML = `<div class="empty-state"><h1>${labels[state.language].empty}</h1></div>`;
+      toc.innerHTML = "";
+      return;
+    }
+    if (!visible.some((doc) => doc.id === state.active)) openDoc(visible[0].id, false);
+  }
+
+  function openDoc(id, rerenderNav = true) {
+    const doc = byId.get(id);
+    if (!doc) return;
+    state.active = id;
+    location.hash = id;
+    article.innerHTML = `<header class="doc-header"><span>${surfaceLabel(doc.surface)} · ${doc.language === "ALL" ? labels[state.language].shared : doc.language}</span><h1>${escape(doc.title)}</h1><p>${escape(doc.summary)}</p><code>${escape(doc.path)}</code></header><div class="markdown">${renderMarkdown(doc.markdown)}</div>`;
+    toc.innerHTML = doc.headings.filter((heading) => heading.depth > 1).map((heading) => `<a class="toc-${heading.depth}" href="#${slug(heading.text)}">${escape(heading.text)}</a>`).join("");
+    document.getElementById("toc-title").textContent = labels[state.language].contents;
+    if (rerenderNav) renderNav();
+    article.scrollTop = 0;
+  }
+
+  function openDocAtHeading(id, heading) {
+    openDoc(id);
+    requestAnimationFrame(() => article.querySelector(`#${CSS.escape(slug(heading))}`)?.scrollIntoView({ behavior: "smooth", block: "start" }));
+  }
+
+  function resolveMarkdownLink(href) {
+    const active = byId.get(state.active);
+    if (!active || !href.split("#")[0].endsWith(".md")) return null;
+    const clean = href.split("#")[0];
+    const stack = active.path.split("/"); stack.pop();
+    for (const part of clean.split("/")) {
+      if (part === "..") stack.pop(); else if (part !== ".") stack.push(part);
+    }
+    return docs.find((doc) => doc.path === stack.join("/")) || null;
+  }
+
+  article.addEventListener("click", (event) => {
+    const anchor = event.target.closest("a");
+    if (!anchor) return;
+    const href = anchor.getAttribute("href") || "";
+    const linked = resolveMarkdownLink(href);
+    if (linked) { event.preventDefault(); openDoc(linked.id); return; }
+    if (href.startsWith("#")) {
+      event.preventDefault(); article.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+
+  document.querySelectorAll("[data-surface]").forEach((button) => button.addEventListener("click", () => {
+    state.surface = button.dataset.surface;
+    document.querySelectorAll("[data-surface]").forEach((item) => item.classList.toggle("active", item === button));
+    renderNav();
+  }));
+  search.addEventListener("input", () => {
+    state.query = normalizeSearch(search.value).split(" ").filter(Boolean);
+    renderNav();
+  });
+  languageButton.addEventListener("click", () => {
+    const current = byId.get(state.active);
+    state.language = state.language === "EN" ? "FR" : "EN";
+    storage.set("reloaded-doc-language", state.language);
+    if (current?.language !== "ALL") {
+      const translated = docs.find((doc) => doc.surface === current.surface && doc.language === state.language && doc.relative === current.relative);
+      if (translated) state.active = translated.id;
+    }
+    updateLanguageUi();
+    renderNav();
+    if (state.active) openDoc(state.active, false);
+  });
+  document.getElementById("theme-button").addEventListener("click", () => {
+    const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+    document.documentElement.dataset.theme = next; storage.set("reloaded-doc-theme", next);
+  });
+  document.documentElement.dataset.theme = storage.get("reloaded-doc-theme") || "dark";
+  function updateLanguageUi() {
+    const copy = labels[state.language];
+    languageButton.textContent = state.language === "EN" ? "FR" : "EN";
+    languageButton.title = state.language === "EN" ? "Afficher en français" : "Show in English";
+    search.placeholder = copy.search;
+    document.getElementById("surface-title").textContent = copy[`${scope}Title`];
+    document.querySelectorAll("[data-surface]").forEach((button) => {
+      button.textContent = copy[button.dataset.surface];
+    });
+  }
+  updateLanguageUi();
+  const hashDoc = byId.get(location.hash.slice(1));
+  if (hashDoc) state.active = hashDoc.id;
+  document.querySelector(`[data-surface="${state.surface}"]`)?.classList.add("active");
+  renderNav();
+})();</script>
+</body></html>
